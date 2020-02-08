@@ -5,7 +5,7 @@
 <title>Edit Form</title>
 </head>
 <body>
-<%@page import="com.javatpoint.dao.UserDao,com.javatpoint.bean.User"%>
+<%@page import="com.dao.UserDao,com.bean.User"%>
 
 <%
 String id=request.getParameter("id");
@@ -19,7 +19,7 @@ User u=UserDao.getRecordById(Integer.parseInt(id));
 <tr><td>Name:</td><td><input type="text" name="name" value="<%= u.getName()%>"/></td></tr>
 <tr><td>Password:</td><td><input type="password" name="password" value="<%= u.getPassword()%>"/></td></tr>
 <tr><td>Email:</td><td><input type="email" name="email" value="<%= u.getEmail()%>"/></td></tr>
-<tr><td>Sex:</td><td><input type="radio" name="sex" value="male"/>Male <input type="radio" name="sex" value="female"/>Female </td></tr>
+<tr><td>Gender:</td><td><input type="radio" name="gender" value="male"/>Male <input type="radio" name="gender" value="female"/>Female </td></tr>
 <tr><td>Country:</td><td>
 <select name="country">
 <option>India</option>

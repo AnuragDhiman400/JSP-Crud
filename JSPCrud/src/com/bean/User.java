@@ -1,13 +1,19 @@
-package com.javatpoint.bean;
+package com.bean;
 
 public class User {
 private int id;
-private String name,password,email,sex,country;
+private String name,password,email,gender,country;
 public int getId() {
 	return id;
 }
 public void setId(int id) {
 	this.id = id;
+}
+public String getGender() {
+	return gender;
+}
+public void setGender(String gender) {
+	this.gender = gender;
 }
 public String getName() {
 	return name;
@@ -27,12 +33,7 @@ public String getEmail() {
 public void setEmail(String email) {
 	this.email = email;
 }
-public String getSex() {
-	return sex;
-}
-public void setSex(String sex) {
-	this.sex = sex;
-}
+
 public String getCountry() {
 	return country;
 }
